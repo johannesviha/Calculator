@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CalculatorCounter\CalculatorCounter.csproj" />
     <ProjectReference Include="..\CalculatorLibrary\CalculatorLibrary.csproj" />
+    <ProjectReference Include="..\CalculatorList\CalculatorList.csproj" />
   </ItemGroup>
 
 </Project>
