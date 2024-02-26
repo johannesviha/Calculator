@@ -150,6 +150,10 @@ namespace CalculatorProgram
                 Console.WriteLine("\ts - Subtract");
                 Console.WriteLine("\tm - Multiply");
                 Console.WriteLine("\td - Divide");
+                Console.WriteLine("\tsq - Square root");
+                Console.WriteLine("\tpow - Taking the power");
+                Console.WriteLine("\te - Exponentiation");
+                Console.WriteLine("\tsine - Sine");
                 Console.Write("Your option? ");
 
                 string op = Console.ReadLine();

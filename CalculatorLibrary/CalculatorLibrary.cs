@@ -61,6 +61,33 @@ namespace CalculatorLibrary
                     }
                     writer.WriteValue("Divide");
                     break;
+                case "sq":
+                    double squareRootNum1 = Math.Sqrt(num1);
+                    double squareRootNum2 = Math.Sqrt(num2);
+                    result = squareRootNum1 + squareRootNum2;
+                    resultList.AddCalculation($"The square root of {num1} + {num2} = {result}");
+                    resultList.AddResult(result);
+                    writer.WriteValue("SquareRoot");
+                    break;
+                case "pow":
+                    result = Math.Pow(num1, num2);
+                    resultList.AddCalculation($"{num1} raised to the power of {num2} = {result}");
+                    resultList.AddResult(result);
+                    writer.WriteValue("Power");
+                    break;
+                case "e":
+                    result = Math.Pow(num1, num2);
+                    resultList.AddCalculation($"The result of {num1} raised to the power of {num2} = {result}");
+                    resultList.AddResult(result);
+                    writer.WriteValue("Exponentiation");
+                    break;
+                case "sine":
+                    double angleInRadians = Math.PI / (num1 + num2);
+                    result = Math.Sin(angleInRadians);
+                    resultList.AddCalculation($"The sine of {angleInRadians} radians is = {result}");
+                    resultList.AddResult(result);
+                    writer.WriteValue("Sine");
+                    break;
                 // Return text for an incorrect option entry.
                 default:
                     break;
